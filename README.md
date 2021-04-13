@@ -16,3 +16,5 @@ Jones Pearlman, Anthony Kupecz, Anannya Shandilya, Anne Chen, Jordan Wong, and S
 7. Build UI for users to submit images
 
 8. Classify the image and return the results
+
+I CAN EDIT IT 
