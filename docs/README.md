@@ -5,6 +5,9 @@ Jones Pearlman, Anthony Kupecz, Anannya Shandilya, Anne Chen, Jordan Wong, and S
 
 Out plan is to gather the training data from various fashion websites. We will scrape these websites for images of outfits. We will also use google and other search engine tools to find pictures of un-fashionable outfits. This will be a farily involved process which we will put a lot of work into in order to ensure we have good quality training data.
 
+DATA FORMAT:
+  The raw data will be stored in a git directory as jpg files. The repository will also hold some pre designed CSV files which will serve as input to the HIT. The HIT we design will take one of the premade CSV files and display the images requiring labels to the workers. From here, the results will be downloaded and also stored in the GitHub repository.
+
 2. Design the HIT (3 points)
 
 The hit design will also be of utmost importance. In order to ensure that the data is labeled "properly" and efficiently, the HIT will need to be well designed. Furthermore, in order to keep the cost of this labeling relatively low, we will need to find a balance between loading as many images as possible in the hit and allowing for Turkers to give meaningful lables.
