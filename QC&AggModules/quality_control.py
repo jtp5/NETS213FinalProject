@@ -6,8 +6,8 @@ import pandas as pd
 #Reading File
 sample_input = pd.read_csv("sample_input.csv", encoding= 'unicode_escape', header=0)
 
-# Quality Control Module - Majority vote
-# Part 1 - Majority vote
+# Quality Control and Aggregation Module - Majority vote
+
 def majority_vote(mturk_res):
     votes = []
     for i in range(0, len(mturk_res), 3):
