@@ -1,0 +1,6 @@
+,worker_id,fashion_qual,casual_qual,overall_qual
+0,Worker1,1.000,1.000,1.000
+1,Worker2,0.500,0.750,0.250
+2,Worker3,1.000,1.000,1.000
+3,Worker4,1.000,0.750,0.750
+4,Worker5,0.500,0.250,0.000
