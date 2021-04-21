@@ -2,7 +2,7 @@
 Jones Pearlman, Anthony Kupecz, Anannya Shandilya, Anne Chen, Jordan Wong, and Samuel Kamien
 
 # Raw Data
-The raw data we used for our sample runs comes from a publically available dataset on Kaggle that contains 5000 images of clothes. The raw data can be found under NETS213FinalProject/data/.
+The raw data we used for our sample runs comes from a publically available dataset on Kaggle that contains 5000 images of clothes. The raw data can be found under NETS213FinalProject/data/. The link to the Kaggle dataset is https://www.kaggle.com/agrigorev/clothing-dataset-full
 
 # Sample input/output for QC and Aggregation
 We generated fake sample data to use as inputs for testing our quality control module. This data can be found under NETS213FinalProject/QC&AggModules/. The following is a description of files in this folder - 
