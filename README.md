@@ -1,5 +1,5 @@
-# NETS213FinalProject
-Jones Pearlman, Anthony Kupecz, Anannya Shandilya, Anne Chen, Jordan Wong, and Samuel Kamien NETS213 Final Project
+# NETS213 Final Project - Glam Guru
+Jones Pearlman, Anthony Kupecz, Anannya Shandilya, Anne Chen, Jordan Wong, and Samuel Kamien
 
 # Raw Data
 The raw data we used for our sample runs comes from a publically available dataset on Kaggle that contains 5000 images of clothes. The raw data can be found under NETS213FinalProject/data/.
