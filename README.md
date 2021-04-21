@@ -11,11 +11,11 @@ We generated fake sample data to use as inputs for testing our quality control m
 
 (2) quality_control.py: This python file contains our code for quality control and aggregation. We used majority vote system for quality control and aggregation. For the sake of simplicity for workers and to avoid survey response issues like regression to mean or ambiguity in responses, we modified our previous HIT design (which was that users enter a number on scale of 1 to 4 to indicate how fashionable, formal, casual, or trashy a clothing item is) such that now users enter one word responses for each image to indicate if the clothing item shown is fashinable/trashy and casual/formal. Each HIT is filled by 3 workers, and then, we use simple majority to determine the category for the clothing. 
 
-To asses worker quality, we compare their response with majority response. We created 3 categories - quality for identifying fashionable vs trashy, quality for identifying casual vs. formal, and overall quality i.e. quality for both categorizations (implement using an & clause).
+* To asses worker quality, we compare their response with majority response. We created 3 categories - quality for identifying fashionable vs trashy, quality for identifying casual vs. formal, and overall quality i.e. quality for both categorizations (implement using an & clause).
 
 * While currently, we have simple majority, we plan to adopt weighted majority aggregation and quality check, if we are able to find reliable gold standard image data i.e. data from credible sources that classifies clothes into fashionable/trashy and casual/formal. We are planning to collect this gold standard data for quality check by sending questionnaires to fashion students and potentially, professors.
 
-If we are unable to generate reliable gold standard image data, we may adopt EM quality check method.
+* If we are unable to generate reliable gold standard image data, we may adopt EM quality check method.
 
 (3) sample_output.csv: This csv file shows the output that was generated after we ran our quality control module on our sample_input. It shows a simple majority classification of input images into Fashionable (True)-Trashy (False) and Casual (True)-Formal (False).
 
