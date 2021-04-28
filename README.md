@@ -40,9 +40,17 @@ We generated fake sample data to use as inputs for testing our quality control m
 3. Then, after classifying each of the pictures, hit submit.
 4. If you have any questions or comments, feel free to contact Anthony Kupecz at anthonykupecz@gmail.com -- Or call me at (732) 213-7558 -- Prank calls are welcomed. 
 
+
+# Next Steps
+Our next steps for this project will focus on - 
+(1) gathering actual data
+(2) refining our quality control and aggregation algorithm to incorporate gold standard labels
+(3) implementing the machine learning algorithm
+(4) testing and further analysis (with our preliminary analysis plans discussed below)
+
 # Analysis Plan
 We aim to primarily tackle the two questions of analyzing how accurate the subjective tastes of the crowd are and how well this method could scale in terms of time and money. 
 
-To tackle the first question, we currently have a couple fashion major friends from Drexel manually labelling a handful of images (until they get tired), and we will use these as gold standard labels. Of course fashion is subjective, but surely theres some creedence in the ability of a fashion major to accurately identify fashion. We will then compare the results of our MTurk hits to these gold standards and evaluate there quality from that.
+To tackle the first question, we currently have a couple fashion major friends from Drexel manually labelling a handful of images (until they get tired), and we will use these as gold standard labels. Of course fashion is subjective, but surely there exists some creedence in the ability of a fashion major to accurately identify fashion. We will then compare the results of our MTurk hits to these gold standards and evaluate there quality from that.
 
-To tackle the second question, we will see how well the responses from MTurk are, and of course throw out responses that were clearly B.S. After seeing how much we had to pay to get X labels of images, we can approximate how much it would cost to get Y labels of images. We of course need to see how the X labels of images do with training our model -- if the model's accuracy is good on the gold standard images, then we clearly don't need more labels. however, if the quality of the model is terrible on these gold standard labels, then we try and estimate how many more pieces of training data we need to bump the accuracy up (which isn't simple/ necessarily possible to exactly determine), but we will make some assumptions. 
+To tackle the second question, we will see how well the responses from MTurk are, and of course throw out responses that were clearly incorrect. After seeing how much we had to pay to get X labels of images, we can approximate how much it would cost to get Y labels of images. We would need to see how the X labels of images do with training our model -- if the model's accuracy is good on the gold standard images, then we clearly don't need more labels. however, if the quality of the model is terrible on these gold standard labels, then we will try to estimate how many more pieces of training data we need to bump the accuracy up (which isn't simple/ necessarily possible to exactly determine), based on some assumptions that would be necessary for the calculation. 
