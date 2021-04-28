@@ -29,7 +29,7 @@ We generated fake sample data to use as inputs for testing our quality control m
 
 # How to Contribute to Data Classification
 
-1. Access the HIT [here](https://workersandbox.mturk.com/projects/3KAXSJ4SD4T124TF83NVAJ1CPU75QF/tasks/3WRBLBQ2GR8AP8FOQV2XOSE28JQ0GA?assignment_id=3L4D84MILZSYDU9FMCZNGG1FKOAHJQ&auto_accept=true)
+1. Access the HIT [here](https://workersandbox.mturk.com/requesters/A31L69C4K3T6Z6/projects?ref=w_pl_prvw&fbclid=IwAR2ZTe2LYdVOBxuyV8o1O6KxypPhNYvzv-BlUTy_6PWPZjiZkfeXUHQYKQA)
 
 2. You will be shown 12 images of clothes, and you will be tasked with classifying them as the following:
    - Fashionable & Casual
