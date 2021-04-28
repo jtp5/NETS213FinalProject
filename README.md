@@ -43,9 +43,13 @@ We generated fake sample data to use as inputs for testing our quality control m
 
 # Next Steps
 Our next steps for this project will focus on - 
+
 (1) gathering actual data
+
 (2) refining our quality control and aggregation algorithm to incorporate gold standard labels
+
 (3) implementing the machine learning algorithm
+
 (4) testing and further analysis (with our preliminary analysis plans discussed below)
 
 # Analysis Plan
