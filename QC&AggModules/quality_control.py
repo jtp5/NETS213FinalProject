@@ -9,6 +9,13 @@ sample_input = pd.read_csv("sample_input.csv", encoding= 'unicode_escape', heade
 
 # Quality Control and Aggregation Module - Majority vote
 
+# Majority Vote Function
+# This function takes input of a resulting dataset from our project specific HITs.
+# It calculates the majority vote result for each image for two categories - "Fashionable" vs "Trashy" & "Formal" vs "Casual".
+# Input Parameter: mturk_res - a dataset containing HIT results.
+# Returns a list of tuples in the format (image, "Fashionable"/"Trashy", "Formal"/"Casual")
+# where the second and third elements of the tuples are determined based on majority vote.
+
 def majority_vote(mturk_res):
     votes = []
     for i in range(0, len(mturk_res), 3):
@@ -26,6 +33,13 @@ def majority_vote(mturk_res):
 
     return sorted(votes, key=lambda tup: (tup[0], tup[1], tup[2]))
            
+# Majority Vote Worker Function
+# This function takes input of a resulting dataset from our project specific HITs and result from Majority Vote function. 
+# It calculates workers quality by comparing their inputs to the majority vote result for each image. It calculates workers' quality in identifying
+# Fashionable/Not Fashionable, Formal/Casual, and overall quality as defined by ability to identify both Fashionable/Not Fashionable & Formal/Casual.
+# Input Parameter: mturk_res - a dataset containing HIT results & votes - a list of tuples in the format (image, "Fashionable"/"Trashy", "Formal"/"Casual")
+# Returns a list of tuples in the format (worker, fashion quality, casual quality, overall quality)
+# where the second, third, and fourth elements of the tuples are determined based on majority vote results, and rounded off to 3 decimal places.
 
 def majority_vote_workers(mturk_res, votes):
     tuples = []
@@ -84,10 +98,12 @@ def majority_vote_workers(mturk_res, votes):
     qual_lst = [(worker_id, "{:.3f}".format(qual[worker_id][0]), "{:.3f}".format(qual[worker_id][1]), "{:.3f}".format(qual[worker_id][2])) for worker_id in qual]
     return sorted(qual_lst, key=lambda tup: tup[0])
 
+# Call to majority votes function on sample data
 votes = majority_vote(sample_input)
 df1 = pd.DataFrame(votes, columns=['image', 'fashionable', 'casual'])
 df1.to_csv('sample_output.csv')
 
+# Call to majority votes worker function on sample data and result of majority votes on sample data
 qual_lst = majority_vote_workers(sample_input, votes)
 df2 = pd.DataFrame(qual_lst, columns=['worker_id', 'fashion_qual', 'casual_qual', 'overall_qual'])
 df2.to_csv('worker_qual.csv')
