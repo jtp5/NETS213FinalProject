@@ -26,3 +26,13 @@ We generated fake sample data to use as inputs for testing our quality control m
 (5) Sample input_output Aggregation.xlsx: This excel file provides an overarching reader-friendly summary of file 3.
 
 (5) Sample input_output QC.xlsx: This excel file provides an overarching reader-friendly summary of file 4.
+
+# How to Contribute to HIT
+
+1. Access the HIT [here](https://workersandbox.mturk.com/projects/3KAXSJ4SD4T124TF83NVAJ1CPU75QF/tasks/3WRBLBQ2GR8AP8FOQV2XOSE28JQ0GA?assignment_id=3L4D84MILZSYDU9FMCZNGG1FKOAHJQ&auto_accept=true)
+2. You will be shown 12 images of clothes, and you will be tasked with classifying them as the following:
+   - Fashionable & Casual
+   - Fashionable & Formal
+   - Not Fashionable & Casual
+   - Not Fashionable & Formal
+3. Then, after classifying each of the pictures, hit submit.
