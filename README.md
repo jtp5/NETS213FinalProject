@@ -38,3 +38,4 @@ We generated fake sample data to use as inputs for testing our quality control m
    - Not Fashionable & Formal
 
 3. Then, after classifying each of the pictures, hit submit.
+4. If you have any questions or comments, feel free to contact Anthony Kupecz at anthonykupecz@gmail.com -- Or call me at (732) 213-7558 -- Prank calls are welcomed. 
