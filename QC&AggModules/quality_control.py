@@ -8,31 +8,6 @@ import pandas as pd
 sample_input = pd.read_csv("sample_input.csv", encoding= 'unicode_escape', header=0)
 
 # Quality Control and Aggregation Module - Majority vote
-
-# Majority Vote Function
-# This function takes input of a resulting dataset from our project specific HITs.
-# It calculates the majority vote result for each image for two categories - "Fashionable" vs "Trashy" & "Formal" vs "Casual".
-# Input Parameter: mturk_res - a dataset containing HIT results.
-# Returns a list of tuples in the format (image, "Fashionable"/"Trashy", "Formal"/"Casual")
-# where the second and third elements of the tuples are determined based on majority vote.
-
-def majority_vote(mturk_res):
-    votes = []
-    for i in range(0, len(mturk_res), 3):
-        for j in range(1, 5):
-            image = mturk_res['Image%sFile' % j][i]
-            ans1 = 1 if mturk_res['Image%sTrashy/Fashionable' % j][i] == 'Fashionable' else 0 
-            ans2 = 1 if mturk_res['Image%sTrashy/Fashionable' % j][i+1] == 'Fashionable' else 0 
-            ans3 = 1 if mturk_res['Image%sTrashy/Fashionable' % j][i+2] == 'Fashionable' else 0 
-            fashionable = ans1 + ans2 + ans3 >= 2
-            ans1 = 1 if mturk_res['Image%sCasual/Formal' % j][i] == 'Casual' else 0 
-            ans2 = 1 if mturk_res['Image%sCasual/Formal' % j][i+1] == 'Casual' else 0 
-            ans3 = 1 if mturk_res['Image%sCasual/Formal' % j][i+2] == 'Casual' else 0 
-            casual = ans1 + ans2 + ans3 >= 2
-            votes.append((image, fashionable, casual))
-
-    return sorted(votes, key=lambda tup: (tup[0], tup[1], tup[2]))
-           
 # Majority Vote Worker Function
 # This function takes input of a resulting dataset from our project specific HITs and result from Majority Vote function. 
 # It calculates workers quality by comparing their inputs to the majority vote result for each image. It calculates workers' quality in identifying
